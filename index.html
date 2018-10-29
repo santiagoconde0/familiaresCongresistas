@@ -20,6 +20,7 @@
 		link.type = 'text/css';
 		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
 		document.getElementsByTagName('head')[0].appendChild(link);
+
 	</script>
 </head>
 
@@ -27,24 +28,46 @@
 	<div class="reveal">
 		<div class="slides">
 			<section>
-				<section>
+				<section data-autoslide="10000">
 
 					<h6>Estos fueron alguno de los congresistas con más votos en las pasadas elecciones</h6>
-					<div id="target1">
+					<div id="content">
+					 <svg width="600" height="600">
+					 </svg>
+				 </div>
 
-					</div>
+
 				</section>
+
+
+				<section data-autoslide="2000">
+					<p data-autoslide="2000">pero....</p>
+					<p class="fragment" data-autoslide="2000">¿Qué tienen en común estos congresistas?</p>
+				</section>
+
 				<section>
-					<div id="target1">
 
-					<!-- <iframe src="https://github.com/mlcardenas18/MORTALIDAD_SUICIDIO/blob/master/index.html" width="1000" height="1000"></iframe> -->
-					slide 2
+					<h2 data-autoslide="2000">¡Todos tienen familiares contratando con el estado!</h2>
+					<p class="fragment" data-autoslide="2000">Veamos lo siguiente</p>
 				</section>
+
+				<section>
+					<iframe src="https://mlcardenas18.github.io/CONFLICTODEINTERESES/index.html" width="1200" height="1200" scrolling="no" style="overflow:hidden;"></iframe>
+				</section>
+
+
+
+
+
+
+
+
 			</section>
 		</div>
 	</div>
 
 	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="js/bubble.js"></script>
 	<script src="js/main.js"></script>
 	<script src="lib/js/head.min.js"></script>
 	<script src="js/reveal.js"></script>
