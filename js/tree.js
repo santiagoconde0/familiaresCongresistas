@@ -106,7 +106,7 @@ console.log("DATA: ", data);
           return 10
         }
       })
-      .attr("fill", d => d._children ? "steelblue" : "white")
+      .attr("fill", d => d._children ? "steelblue" : "#FAF7E6")
       .attr("stroke", "steelblue")
       .attr("stroke-width", "3px");
 
@@ -137,16 +137,6 @@ nodeEnter.append("image")
       .duration(750)
       .attr("width", 85)
       .attr("height", 85);
-
-      d3.select(this).select("text").append("text")
-        .attr("id", "label")
-        .attr("x", 15)
-        .text("TEXT")
-        .style("font-size", "1045px")
-        .style("font-weight", "bold")
-        .style("fill", "black")
-        .style("stroke-width", 1)
-        .style("stroke", "white");
 
       })
       .on("mouseout", function () {
@@ -185,7 +175,7 @@ nodeEnter.append("image")
       })
       .clone(true).lower()
       .attr("stroke-width", 5)
-      .attr("stroke", "white");
+      .attr("stroke", "#FAF7E6");
 
     nodeEnter.append("text")
       .attr("dy", "1.31em")
@@ -212,7 +202,7 @@ nodeEnter.append("image")
       })
       .clone(true).lower()
       .attr("stroke-width", 5)
-      .attr("stroke", "white");
+      .attr("stroke", "#FAF7E6");
 
     nodeEnter.append("text")
       .attr("dy", "2.31em")
@@ -239,7 +229,7 @@ nodeEnter.append("image")
       })
       .clone(true).lower()
       .attr("stroke-width", 5)
-      .attr("stroke", "white");
+      .attr("stroke", "#FAF7E6");
 
     // Transition nodos a la nueva posicion
     const nodeUpdate = node.merge(nodeEnter).transition(transition)
