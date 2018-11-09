@@ -4,22 +4,22 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-	<title>reveal.js</title>
+<link rel="stylesheet" href="/css/master.css">
+	<title>Familiares congresistas</title>
 
 	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/black.css">
+	<link rel="stylesheet" href="css/theme/beige.css">
 
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
 
 	<!-- Printing and PDF exports -->
 	<script>
-		var link = document.createElement('link');
-		link.rel = 'stylesheet';
-		link.type = 'text/css';
-		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-		document.getElementsByTagName('head')[0].appendChild(link);
+		var link = document.createElement("link");
+		link.rel = "stylesheet";
+		link.type = "text/css";
+		link.href = window.location.search.match(/print-pdf/gi) ? "css/print/pdf.css" : "css/print/paper.css";
+		document.getElementsByTagName("head")[0].appendChild(link);
 
 	</script>
 </head>
@@ -28,39 +28,37 @@
 	<div class="reveal">
 		<div class="slides">
 			<section>
-				<section data-autoslide="10000">
+				<section data-autoslide="8000">
 
-					<h6>Estos fueron alguno de los congresistas con más votos en las pasadas elecciones</h6>
-					<div id="content">
-					 <svg width="600" height="600">
-					 </svg>
+					<h3>Estos fueron alguno de los congresistas con más votos en las pasadas elecciones</h3>
+					<div id="content" align = "center">
 				 </div>
 
 
 				</section>
 
 
-				<section data-autoslide="2000">
-					<p data-autoslide="2000">pero....</p>
-					<p class="fragment" data-autoslide="2000">¿Qué tienen en común estos congresistas?</p>
+				<section data-autoslide="1200">
+					<p data-autoslide="1200">pero....</p>
+					<p class="fragment" data-autoslide="1200">¿Qué tienen en común estos congresistas?</p>
 				</section>
 
 				<section>
 
 					<h2 data-autoslide="2000">¡Todos tienen familiares contratando con el estado!</h2>
-					<p class="fragment" data-autoslide="2000">Veamos lo siguiente</p>
+					<p class="fragment" data-autoslide="800">Veamos lo siguiente</p>
 				</section>
 
 				<section>
-					<iframe src="https://mlcardenas18.github.io/CONFLICTODEINTERESES/index.html" width="1200" height="1200" scrolling="no" style="overflow:hidden;"></iframe>
+
+					<div class="wrap">
+						<iframe src="https://mlcardenas18.github.io/PROYECTO_VIS_1/index.html" width="1300" height="1200" scrolling="no" style="overflow:hidden;"></iframe>
+					</div>
 				</section>
 
-
-
-
-
-
-
+     <section>
+     	<iframe src="net.html" width="2000" height="2000" ></iframe>
+     </section>
 
 			</section>
 		</div>
@@ -79,17 +77,17 @@
 		// - https://github.com/hakimel/reveal.js#dependencies
 		Reveal.initialize({
 			dependencies: [{
-					src: 'plugin/markdown/marked.js'
+					src: "plugin/markdown/marked.js"
 				},
 				{
-					src: 'plugin/markdown/markdown.js'
+					src: "plugin/markdown/markdown.js"
 				},
 				{
-					src: 'plugin/notes/notes.js',
+					src: "plugin/notes/notes.js",
 					async: true
 				},
 				{
-					src: 'plugin/highlight/highlight.js',
+					src: "plugin/highlight/highlight.js",
 					async: true,
 					callback: function() {
 						hljs.initHighlightingOnLoad();

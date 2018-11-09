@@ -40,7 +40,7 @@
 			// The "normal" size of the presentation, aspect ratio will be preserved
 			// when the presentation is scaled to fit different resolutions
 			width: 960,
-			height: 700,
+			height: 900,
 
 			// Factor of the display size that should remain empty around the content
 			margin: 0.04,
@@ -153,7 +153,7 @@
 			defaultTiming: null,
 
 			// Enable slide navigation via mouse wheel
-			mouseWheel: false,
+			mouseWheel: true,
 
 			// Apply a 3D roll to links on hover
 			rollingLinks: false,
@@ -176,7 +176,7 @@
 			focusBodyOnPageVisibilityChange: true,
 
 			// Transition style
-			transition: 'slide', // none/fade/slide/convex/concave/zoom
+			transition: 'zoom', // none/fade/slide/convex/concave/zoom
 
 			// Transition speed
 			transitionSpeed: 'default', // default/fast/slow
@@ -277,7 +277,7 @@
 		isChrome,
 
 		// Throttles mouse wheel navigation
-		lastMouseWheelStep = 0,
+		lastMouseWheelStep = 10,
 
 		// Delays updates to the URL due to a Chrome thumbnailer bug
 		writeURLTimeout = 0,
